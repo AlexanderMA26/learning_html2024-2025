@@ -6,11 +6,13 @@
         <link rel = "icon" type="image/x-icon" href = "Hearts.png">
     </head>
 <style>
-body {background-color: lightblue;}
+body {background-image: conic-gradient(red, yellow, green, blue, black);}
 p {color: forestgreen;}
 table, th, td {
   border:1px solid black;
 }
+tr:hover {background-color: #D6EEEE;}
+
 </style>
 <h1>learning HTML</h1>
 
@@ -26,4 +28,65 @@ table, th, td {
     <hr>
 
     <span>I am sooo</span><small>oooooooooooooo</small> <sub>oooooooooooo</sub><span> excited to learn web development this semester!</span>
- 
+    <!--got help from Stack Overflow with above <span> -->
+   <!--I was trying to make the so look like a voice dying out as it goes on for longer.-->
+
+   <h2>My favorite TV shows</h2>
+   <table>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Number of Episodes</th>
+        </tr>
+
+        <tr>
+            <td>Wild Kratts</td>
+            <td>Kids / Educational</td>
+            <td>152 Episodes</td>
+
+        </tr>
+
+        <tr>
+            <td>Peaky Blinders</td>
+            <td>Crime</td>
+            <td>36</td>
+        </tr>
+
+        <tr>
+            <td>Cowboy Bebop</td>
+            <td>Anime</td>
+            <td>26</td>
+
+        </tr>
+
+
+   </table>
+
+
+   <h2>Shopping List</h2>
+   <ul>
+    <li>Eggs</li>
+    <li>Bacon</li>
+    <li>Bread</li>
+    <li>Apples</li>
+   </ul>
+
+   <h2>Class Information</h2>
+   <form>
+    <label for="cname">Class Name:</label>
+    <input type="text" id="cname" name="cname">
+    <label for="prof">Teacher Name:</label>
+    <input type="text" id="prof" name="prof"><br>
+    <label for="subject">Choose a subject:</label>
+  <select id="subject" name="subject">
+    <option value="Science">Science</option>
+    <option value="English">English</option>
+    <option value="Languages">Languages</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="History">History</option>
+  </select>
+  <input type="submit">
+  </form>
+    
+</body>
+</html>

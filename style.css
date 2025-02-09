@@ -2,3 +2,7 @@ h1{
     color:blue
 }
 h1{text-align: center;}
+
+#grad {
+    background-image: linear-gradient(to bottom right, red, yellow);
+  }
