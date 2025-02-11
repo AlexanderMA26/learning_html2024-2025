@@ -19,7 +19,7 @@ tr:hover {background-color: #D6EEEE;}
 <h1>learning HTML</h1>
 
 <body>
-    <h>
+    <h style="color: aquamarine;">
         My first HTML page
     </h>
     <p>By: Alexander Landis-Arnold</p>
@@ -92,6 +92,15 @@ tr:hover {background-color: #D6EEEE;}
 
 
   <script>
+    function picksong(){
+        songs = ["Pusherman 4.mp3", "Love is... 4.mp3", "Heroes (2017 Remaster) 4.mp3"]
+        min = Math.ceil(0);
+        max = Math.floor(2);
+        num = Math.floor(Math.random() * (max - min + 1)) + min;
+        var song_pick = new Audio(songs[num])
+        return song_pick
+    }
+
     function buttonhandler(){
         timer()
         playMusic()
@@ -103,15 +112,18 @@ tr:hover {background-color: #D6EEEE;}
     function timer(){
         setInterval(getDate, 1000);
     }
-    var music = new Audio('Love is... 4.mp3');
+    
     function playMusic(){
-    music.currentTime = 0
-  
-   music.play();
+    if (music){
+        music.pause()
+    }
+    var music = picksong()
+    music.play()
+    
   }
   </script>
   
-  <p id="date">Click the button to get the time.</p>
+  <h2 style="color: orange;" id="date">Click the button to get the time.</h2>
 
   <button type="button" onclick="buttonhandler()">Click Me!</button>
   
