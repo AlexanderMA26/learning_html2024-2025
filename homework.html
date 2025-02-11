@@ -5,6 +5,7 @@
         <link rel = "stylesheet" href = "style.css">
         <link rel = "icon" type="image/x-icon" href = "Hearts.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
 <style>
 body {background-image: conic-gradient(red, yellow, green, blue, purple, red);}
@@ -102,9 +103,11 @@ tr:hover {background-color: #D6EEEE;}
     function timer(){
         setInterval(getDate, 1000);
     }
+    var music = new Audio('Love is... 4.mp3');
     function playMusic(){
-  var music = new Audio('Love is... 4.mp3');
-  music.play();
+    music.currentTime = 0
+  
+   music.play();
   }
   </script>
   
