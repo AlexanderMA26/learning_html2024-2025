@@ -4,9 +4,10 @@
     <head>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "icon" type="image/x-icon" href = "Hearts.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <style>
-body {background-image: conic-gradient(red, yellow, green, blue, black);}
+body {background-image: conic-gradient(red, yellow, green, blue, purple, red);}
 p {color: forestgreen;}
 table, th, td {
   border:1px solid black;
@@ -24,7 +25,7 @@ tr:hover {background-color: #D6EEEE;}
 
     <a href = "https://en.wikipedia.org/wiki/Sergeant_Reckless">Cool Wikipedia Article </a>
     <hr>
-        <img src = "IMG_6817.jpeg" alt = "Alexander and Co. in Spain" width="500" height = "600" >
+        <img src = "IMG_6817.jpeg" alt = "Alexander and Co. in Spain" style="width:50%;" >
     <hr>
 
     <span>I am sooo</span><small>oooooooooooooo</small> <sub>oooooooooooo</sub><span> excited to learn web development this semester!</span>
@@ -87,6 +88,30 @@ tr:hover {background-color: #D6EEEE;}
   </select>
   <input type="submit">
   </form>
+
+
+  <script>
+    function buttonhandler(){
+        timer()
+        playMusic()
+    }
+    function getDate(){
+        const date = new Date();
+        document.getElementById("date").innerHTML = date;
+    }
+    function timer(){
+        setInterval(getDate, 1000);
+    }
+    function playMusic(){
+  var music = new Audio('Love is... 4.mp3');
+  music.play();
+  }
+  </script>
+  
+  <p id="date">Click the button to get the time.</p>
+
+  <button type="button" onclick="buttonhandler()">Click Me!</button>
+  
     
 </body>
 </html>
