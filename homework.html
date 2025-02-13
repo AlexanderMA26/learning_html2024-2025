@@ -92,6 +92,7 @@ tr:hover {background-color: #D6EEEE;}
 
 
   <script>
+    let music = null;
     function picksong(){
         songs = ["Pusherman 4.mp3", "Love is... 4.mp3", "Heroes (2017 Remaster) 4.mp3"]
         min = Math.ceil(0);
@@ -116,8 +117,9 @@ tr:hover {background-color: #D6EEEE;}
     function playMusic(){
     if (music){
         music.pause()
+        music.currentTime=0;
     }
-    var music = picksong()
+    music = picksong()
     music.play()
     
   }
